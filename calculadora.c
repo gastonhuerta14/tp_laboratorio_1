@@ -1,36 +1,38 @@
 
-float sumar(int numeroUno,int numeroDos)
+float sumar(float numeroUno,float numeroDos)
 {
-    int resultado=0;
+    float resultado=0;
     resultado=numeroUno+numeroDos;
     return resultado;
 }
 
-float restar(int numeroUno, int numeroDos)
+float restar(float numeroUno, float numeroDos)
 {
-    int resultado=0;
+    float resultado=0;
     resultado=numeroUno-numeroDos;
     return resultado;
 }
 
-float multiplicar(int numeroUno, int numeroDos)
+float multiplicar(float numeroUno, float numeroDos)
 {
-    int resultado=0;
+    float resultado=0;
     resultado=numeroUno*numeroDos;
     return resultado;
 }
 
 
-float division(int numeroUno,int numeroDos)
+float division(float numeroUno,float numeroDos)
 {
-    int resultado=0;
+    float resultado=0;
     resultado=numeroUno/numeroDos;
     return resultado;
 }
 
-float factorial(int numeroUno)
+float factorial(float numero)
 {
-    int resultado=0;
-    resultado=numeroUno;
+    float resultado=0;
+    if(numero==1)
+    return 1;
+    resultado=numero*(factorial(numero-1));
     return resultado;
 }

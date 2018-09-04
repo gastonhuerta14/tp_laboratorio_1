@@ -12,9 +12,9 @@ void main()
     float resultadoDos;
 
     do{
-    printf("\n Ingrese el valor de A\n", A);
+    printf("\n Ingrese primer valor\n", A);
     scanf("%f", &A);
-    printf("Ingrese el valor de B\n", B);
+    printf("Ingrese segundo valor\n", B);
     scanf("%f", &B);
     printf("Ingrese la operación que desea realizar:\n 1) Sumar\n 2) Restar\n 3) Multiplicar\n 4) Dividir\n 5) Factorial\n 6) Salir\n", operacion);
     scanf("%d", &operacion);
@@ -44,16 +44,16 @@ void main()
             }
             case 5 : {
                 resultadoUno = factorial(A);
+                printf("\nFactorial del primer número es: %.2f" , resultadoUno);
                 resultadoDos = factorial(B);
-                printf("\nFactorial Uno: %.2f" , resultadoUno);
-                printf("\nFactorial Dos: %.2f" , resultadoDos);
+                printf("\nFactorial del segundo numero es: %.2f" , resultadoDos);
                 break;
             }
             case 6 : {
                 break;
             }
             default : {
-                printf("\nError eleccion invalida\n");
+                printf("\nError elección invalida\n");
             }
     }
             }while(operacion!=6);
