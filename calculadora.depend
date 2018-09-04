@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1536026596 source:c:\users\gasto\desktop\gast”n\calculadora\main.c
+1536028223 source:c:\users\gasto\desktop\gast”n\calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
 	"calculadora.h"
 
 1536027026 source:c:\users\gasto\desktop\gast”n\calculadora\calculadora.c
 
-1536027270 c:\users\gasto\desktop\gast”n\calculadora\calculadora.h
+1536029409 c:\users\gasto\desktop\gast”n\calculadora\calculadora.h
 

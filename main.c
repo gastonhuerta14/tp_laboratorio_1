@@ -38,13 +38,20 @@ void main()
                 break;
             }
             case 4 : {
-                resultadoUno = division(A,B);
-                printf("\nDivision: %.2f" , 224 , resultadoUno);
+                if(!(A==0 || B==0))
+                    {
+                        resultadoUno = division(A,B);
+                        printf("\nDivision: %.2f" , 224 , resultadoUno);
+                    }else
+                    {
+                        printf("\nNo se puede dividir ningun numero que sea igual a 0");
+                    }
+
                 break;
             }
             case 5 : {
                 resultadoUno = factorial(A);
-                printf("\nFactorial del primer número es: %.2f" , resultadoUno);
+                printf("\nFactorial del primer numero es: %.2f" , resultadoUno);
                 resultadoDos = factorial(B);
                 printf("\nFactorial del segundo numero es: %.2f" , resultadoDos);
                 break;
