@@ -12,11 +12,11 @@ void main()
     float resultadoDos;
 
     do{
-    printf("\n Ingrese primer valor\n", A);
+    printf("\n\nIngrese primer valor: ", A);
     scanf("%f", &A);
-    printf("Ingrese segundo valor\n", B);
+    printf("\nIngrese segundo valor: ", B);
     scanf("%f", &B);
-    printf("Ingrese la operación que desea realizar:\n 1) Sumar\n 2) Restar\n 3) Multiplicar\n 4) Dividir\n 5) Factorial\n 6) Salir\n", operacion);
+    printf("\nIngrese la operación que desea realizar:\n 1) Sumar\n 2) Restar\n 3) Multiplicar\n 4) Dividir\n 5) Factorial\n 6) Salir\n", operacion);
     scanf("%d", &operacion);
 
             switch (operacion) {
@@ -41,7 +41,7 @@ void main()
                 if(!(A==0 || B==0))
                     {
                         resultadoUno = division(A,B);
-                        printf("\nDivision: %.2f" , 224 , resultadoUno);
+                        printf("\nDivision: %.2f", resultadoUno);
                     }else
                     {
                         printf("\nNo se puede dividir ningun numero que sea igual a 0");
@@ -60,9 +60,10 @@ void main()
                 break;
             }
             default : {
-                printf("\nError elección invalida\n");
+                printf("\nError eleccion invalida\n");
             }
-    }
-            }while(operacion!=6);
+        }
+
+    }while(operacion!=6);
 
 }
